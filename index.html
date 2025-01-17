@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/all.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
+    <title>Reisebyrå</title>
+</head>
+<body>
+    <header>
+        <h1>Reisebyrå</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">3Hjem</a<></li>
+                <li><a href="/hotell.html">Hoteller</a></li>
+                <li><a href="/order.html">Bestill</a></li>
+            </ul>
+        </nav>
+        <header>
+            <figure class="logo">
+                <img src="logo.png" alt="Logo">
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="#">Tips og inspirasjon</a></li>
+                    <li><a href="#">Hotell</a></li>
+                    <li><a href="#">Fly</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <aside class="bruker-konto">
+                <a href="#">Opprett en konto</a>
+                <a href="#">Min side</a>
+            </aside>
+        </header>
+    
+        <!-- Søkeseksjon -->
+        <section class="sokeseksjon">
+            <form>
+                <fieldset>
+                    <label for="reise-type">Reisetype</label>
+                    <select id="reise-type">
+                        <option>Fly + Hotell</option>
+                        <option>Fly</option>
+                        <option>Storby</option>
+                        <option>Ski</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="fra">Fra</label>
+                    <input type="text" id="fra" placeholder="Oslo Lufthavn">
+                </fieldset>
+                <fieldset>
+                    <label for="til">Til</label>
+                    <input type="text" id="til" placeholder="Albania">
+                </fieldset>
+                <fieldset>
+                    <label for="antall-reisende">Antall reisende</label>
+                    <input type="number" id="antall-reisende" value="2">
+                </fieldset>
+                <button type="submit">Søk</button>
+            </form>
+        </section>
+    
+        <!-- Kampanje seksjon -->
+        <section class="kampanje">
+            <img src="bilder/holiday-2733322_1280.jpg" alt="Sommerkampanje">
+            <article class="kampanje-tekst">
+                <h1>Bestill sommerens beste uke</h1>
+                <p>Fly + hotell, 7 dager</p>
+                <p>Fra 3 298,-</p>
+                <a href="#">Bestill i dag</a>
+            </article>
+        </section>
+    
+        <!-- Tilbudseksjon -->
+        <section class="tilbud">
+            <article>
+                <h2>Få eksklusive tilbud</h2>
+                <p>Logg inn/opprett konto og få rabattkoder</p>
+            </article>
+            <article>
+                <h2>Billige restplasser</h2>
+                <p>Opptil 50% rabatt</p>
+            </article>
+            <article>
+                <h2>Mars - spar opptil 5000,-</h2>
+                <p>Sikre deg et feriekupp</p>
+            </article>
+        </section>
+    
+        <!-- Tips og inspirasjon -->
+        <section class="inspirasjon">
+            <h2>Tips & Inspirasjon</h2>
+            <div class="kort">
+                <article>
+                    <img src="bilder/beach-6514331_640.jpg" alt="Greske favoritter">
+                    <h3>Greske favoritter</h3>
+                    <p>Oppdag de beste strendene og lokal mat i Hellas.</p>
+                    <p>Fra kr 3 970</p>
+                </article>
+                <article>
+                    <img src="bilder/beach-1836467_640.jpg" alt="Solskinnspriser">
+                    <h3>Solskinnspriser – bestill i dag!</h3>
+                    <p>Fra kr 2 203</p>
+                </article>
+                <article>
+                    <img src="bilder/cathedral-427997_640.jpg" alt="Storbyferie">
+                    <h3>Storbyferie</h3>
+                    <p>Bestill en langhelg og opplev kulturen!</p>
+                </article>
+                <article>
+                    <img src="bilder/building-7014904_640.jpg" alt="London">
+                    <h3>Besøk påskefavoritten London</h3>
+                    <p>Fra kr 2 150</p>
+                </article>
+                <article>
+                    <img src="bilder/ski-slope-3223709_640.jpg" alt="Skiferie">
+                    <h3>Skiferie</h3>
+                    <p>Se alle skistedene</p>
+                </article>
+                <article>
+                    <img src="bilder/beach-666122_640.jpg" alt="Sommerkampanje">
+                    <h3>Spar opptil 7000,- til sommeren</h3>
+                    <p>Drøm deg bort til tropiske destinasjoner.</p>
+                </article>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <!-- Country Flags Section -->
+            <section class="country-flags">
+                <!-- Replace 'flag1.png', 'flag2.png', etc., with actual image filenames -->
+                <img src="flagg/sweden.png" alt="SVerige">
+                <img src="flag2.png" alt="Country Name 2">
+                <img src="flag3.png" alt="Country Name 3">
+                <!-- Add more flags as needed -->
+            </section>
+        
+            <!-- Payment Methods Section -->
+            <section class="payment-methods">
+                <h4>Betalingsmetoder</h4>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <!-- Add more payment icons as needed -->
+            </section>
+        
+            <!-- News and Offers Section -->
+            <section class="news-offers">
+                <h4>Nyheter & Tilbud</h4>
+                <form>
+                    <label for="newsletter-email">Abonner på vårt nyhetsbrev:</label>
+                    <input type="email" id="newsletter-email" placeholder="Din e-post">
+                    <button type="submit">Meld på</button>
+                </form>
+                <a href="#">Kjøp reisegavekort</a>
+            </section>
+        
+            <!-- Customer Service Section -->
+            <section class="customer-service">
+                <h4>Kundeservice</h4>
+                <ul>
+                    <li><a href="#">Spørsmål og Svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="tilgjengelighetserklaering.html">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </section>
+        
+            <!-- Social Media Section -->
+            <section class="social-media">
+                <h4>Følg oss</h4>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-pinterest"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+            </section>
+        </footer>
+        
+    </body>
+    </html>
