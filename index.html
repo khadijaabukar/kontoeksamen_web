@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="ikoner/ikoner/css/all.css">
     <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
     <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Reisebyrå</title>
 </head>
 <body>
@@ -14,31 +15,67 @@
         <h1>Reisebyrå</h1>
         <nav>
             <ul>
-                <li><a href="/index.html">3Hjem</a<></li>
+                <li><a href="/index.html">Hjem</a<></li>
                 <li><a href="/hotell.html">Hoteller</a></li>
                 <li><a href="/order.html">Bestill</a></li>
             </ul>
         </nav>
         <header>
+            <section class="top-bar">
+                <a href="order.html" arial-label="Søk">
+                    <i class="fas fa-search"></i>
+                </a>
+                <aside class="bruker-konto">
+                    <a href="#">Oprett en konto</a>
+                    <a href="#"><i class="fas fa-user"></i>Min side</a>
+                </aside>
+            </section>
+            <section>
+
             <figure class="logo">
-                <img src="logo.png" alt="Logo">
+                <img src="bilder/fav.png" alt="Reisebyrå Logo">
             </figure>
             <nav>
                 <ul>
-                    <li><a href="#">Tips og inspirasjon</a></li>
-                    <li><a href="#">Hotell</a></li>
-                    <li><a href="#">Fly</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#"tips-inspirasjon>Tips og inspirasjon</a></li>
+                    <li><a href="#hotell.html">Hotell</a></li>
+                    <li><a href="https://www.norwegian.no" target="_blank" rel="noopener noreferrer">Fly</a></li>
+                    <li><a href="#footer">Kontakt</a></li>
                 </ul>
             </nav>
-            <aside class="bruker-konto">
-                <a href="#">Opprett en konto</a>
-                <a href="#">Min side</a>
-            </aside>
+            </section>
         </header>
-    
         <!-- Søkeseksjon -->
-        <section class="sokeseksjon">
+        <main>
+        <section class="banner-section">
+            <!-- Bakgrunnsbilde legges til via CSS -->
+        </section>
+
+        <section class="booking-section">
+            <nav class="booking-types">
+                <ul>
+                    <li class="active">
+                        <li class="fas fa-hotel"></li>
+                        <a href="#">Fly+ Hotell</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-plane"></i>
+                        <a href="#">Fly</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-city"></i>
+                        <a href="#">Storby</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-skiing"></i>
+                        <a href="#">Ski</a>
+                    </li>
+                </ul>
+                <i class="fas fa-chevron-right scroll-indicator"></i>
+            </nav>
+
+        </section>
+
             <form>
                 <fieldset>
                     <label for="reise-type">Reisetype</label>
