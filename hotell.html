@@ -1,22 +1,165 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/all.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Hotell</title>
 </head>
 <body>
+     <!-- Header with same navigation as index.html -->
+     <header>
+        <section class="utility-nav">
+            <a href="#" class="logo">
+                <i class="fas fa-sun"></i>
+            </a>
+            <nav class="top-nav">
+                <a href="#" class="search-icon" aria-label="Søk">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="button">Opprett en konto</a>
+                <a href="#" class="button user-account">
+                    <i class="fas fa-user"></i>
+                    Min side
+                </a>
+            </nav>
+        </section>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+                <li><a href="hotell.html">Hotell</a></li>
+                <li><a href="https://www.norwegian.no" target="_blank" rel="noopener noreferrer">Fly</a></li>
+                <li><a href="#footer">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Image Gallery Grid -->
+        <section class="image-gallery">
+            <article class="gallery-grid">
+                <img src="bilder/hotell1.jpg" alt="Hotell utsikt">
+                <img src="bilder/hotell2.jpg" alt="Hotell basseng">
+                <img src="bilder/hotell3.jpg" alt="Hotell lobby">
+                <img src="bilder/hotell4.jpg" alt="Hotell restaurant">
+                <img src="bilder/hotell5.jpg" alt="Hotell spa">
+                <img src="bilder/hotell6.jpg" alt="Hotell strand">
+                
+                <!-- Navigation arrows for mobile -->
+                <button class="gallery-nav prev" aria-label="Forrige bilde">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="gallery-nav next" aria-label="Neste bilde">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Gallery controls -->
+                <button class="favorite-btn" aria-label="Legg til i favoritter">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <div class="image-count">
+                    <i class="fas fa-image"></i>
+                    <span>6</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Page Navigation -->
+        <nav class="page-navigation">
+            <ul>
+                <li><a href="#oversikt">Oversikt</a></li>
+                <li><a href="#fasiliteter">Fasiliteter</a></li>
+                <li><a href="#kart">Kart</a></li>
+                <li><a href="#rom">Rom</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hotel Overview Section -->
+        <section id="oversikt" class="hotel-overview">
+            <h1>Parga Beach</h1>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <p class="score">4.5/5 (59 anmeldelser)</p>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="fasiliteter" class="facilities">
+            <h2>Fasiliteter</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-wifi"></i>
+                    <span>Gratis WiFi</span>
+                </li>
+                <li>
+                    <i class="fas fa-swimming-pool"></i>
+                    <span>Basseng</span>
+                </li>
+                <!-- Add more facilities as needed -->
+            </ul>
+        </section>
+
+        <!-- Map Section -->
+        <section id="kart" class="map">
+            <h2>Beliggenhet</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Available Rooms Section -->
+        <section id="rom" class="available-rooms">
+            <h2>Tilgjengelige rom</h2>
+            <article class="room-card">
+                <img src="bilder/junior-suite.jpg" alt="Junior Suite">
+                <h3>Junior Suite</h3>
+                <ul class="room-info">
+                    <li>Plass til 2</li>
+                    <li>Queen size-seng</li>
+                </ul>
+                <p class="room-score">4.5/5 (59 anmeldelser)</p>
+                <ul class="price-info">
+                    <li class="total-price">6 789 kr</li>
+                    <li class="duration">for 3 netter, 1 rom</li>
+                    <li class="price-per-night">2 263 kr per natt</li>
+                    <li class="tax-info">Ink moms og avgifter</li>
+                </ul>
+            </article>
+            <!-- Add more room cards as needed -->
+        </section>
+    </main>
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <!-- Country Flags Section -->
         <section class="country-flags">
-            <!-- Replace 'flag1.png', 'flag2.png', etc., with actual image filenames -->
+           
+            <figure>
             <img src="flagg/sweden.png" alt="Sverige">
-            <img src="flagg/denmark.png" alt="Denmark">
+            <figcaption>Sverige</figcaption>
+        </figure>
+        <figure>
+            <img src="flagg/denmark.png" alt="Danmark">
+            <figcaption>Danmark</figcaption>
+        </figure>
+        <figure>
             <img src="flagg/norway.png" alt="Norge">
+            <figcaption>Norge</figcaption>
+        </figure>
+        <figure>
             <img src="flagg/material.png" alt="Suomi">
+            <figcaption>Suomi</figcaption>
+       </figure>
+       <figure>
             <img src="flagg/netherlands.png" alt="Nederland">
-            <!-- Add more flags as needed -->
+            <figcaption>Nederland</figcaption>
+        </figure>
         </section>
     
         <!-- Payment Methods Section -->
@@ -25,34 +168,36 @@
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
             <i class="fa-brands fa-cc-paypal"></i>
-            <!-- Add more payment icons as needed -->
         </section>
     
-        <!-- News and Offers Section -->
-        <section class="news-offers">
+        <!-- Newsletter Section -->
+        <section class="newsletter">
             <h4>Nyheter & Tilbud</h4>
-            <form>
-                <label for="newsletter-email">Abonner på vårt nyhetsbrev:</label>
-                <input type="email" id="newsletter-email" placeholder="Din e-post">
-                <button type="submit">Meld på</button>
+            <form class="newsletter-form">
+                <label for="email">Meld deg på nyhetsbrev her:</label>
+                <input type="email" id="email" placeholder="Din e-post">
+                <button type="submit">Send</button>
             </form>
-            <a href="#">Kjøp reisegavekort</a>
+            <a href="#" class="gift-card">Kjøp reisegavekort</a>
         </section>
     
         <!-- Customer Service Section -->
         <section class="customer-service">
             <h4>Kundeservice</h4>
+            <nav>
             <ul>
                 <li><a href="#">Spørsmål og Svar</a></li>
                 <li><a href="#">Chat</a></li>
                 <li><a href="#">Kontakt</a></li>
                 <li><a href="tilgjengelighetserklaering.html">Tilgjengelighetserklæring</a></li>
             </ul>
+            </nav>
         </section>
     
         <!-- Social Media Section -->
         <section class="social-media">
-            <h4>Følg oss</h4>
+            <h4>Sosiale Medier</h4>
+            <nav>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-square-instagram"></i>
             </a>
@@ -68,6 +213,7 @@
             <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-square-youtube"></i>
             </a>
+            </nav>
         </section>
     </footer>
     
