@@ -1,11 +1,168 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/all.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
+    <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Order</title>
 </head>
 <body>
+   <!-- Header Section -->
+   <header>
+    <h1>Bestill din reise</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="hotell.html">Hotell</a></li>
+            <li><a href="order.html">Bestilling</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content Section -->
+<main>
+    <!-- Booking Progress Section -->
+    <section class="booking-progress">
+        <h2>Bestillingsprosess</h2>
+        <nav aria-label="Booking steps">
+            <ul>
+                <li><a href="#">Søk</a></li>
+                <li><a href="#">Søkeresultater</a></li>
+                <li><a href="#">Romtype</a></li>
+                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+                <li><a href="#">Tillegg</a></li>
+                <li class="active">OPPLYSNINGER</li>
+                <li><a href="#">Bestill</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Booking Form Container -->
+    <section class="booking-container">
+        <!-- Main Booking Form -->
+        <form action="submit_booking.php" method="POST">
+            <h2>Oppgi dine bestillingsopplysninger</h2>
+            
+            <!-- Primary Traveler Information -->
+            <fieldset>
+                <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
+                <!-- Name Fields -->
+                <label for="firstname">Fornavn (som i pass):</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Etternavn (som i pass):</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <!-- Birth Date Fields -->
+                <fieldset class="date-input">
+                    <legend>Fødselsdato:</legend>
+                    <input type="text" placeholder="DD" maxlength="2">
+                    <input type="text" placeholder="MM" maxlength="2">
+                    <input type="text" placeholder="ÅÅÅÅ" maxlength="4">
+                </fieldset>
+
+                <!-- Gender Selection -->
+                <fieldset class="gender-input">
+                    <legend>Kjønn:</legend>
+                    <label>
+                        <input type="radio" name="gender1" value="kvinne">
+                        KVINNE
+                    </label>
+                    <label>
+                        <input type="radio" name="gender1" value="mann">
+                        MANN
+                    </label>
+                </fieldset>
+
+                <!-- Contact Information -->
+                <label for="email">E-postadresse:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Gateadresse:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="postnumber">Postnummer:</label>
+                <input type="text" id="postnumber" name="postnumber" required>
+
+                <!-- Country Selection -->
+                <label for="country">Land:</label>
+                <select id="country" name="country" required>
+                    <option value="norway">Norge</option>
+                    <option value="sweden">Sverige</option>
+                    <option value="denmark">Danmark</option>
+                    <option value="finland">Suomi</option>
+                    <option value="netherlands">Nederland</option>
+                </select>
+            </fieldset>
+
+            <!-- Secondary Traveler Information -->
+            <fieldset>
+                <legend>VOKSEN 18+</legend>
+                <!-- Name Fields -->
+                <label for="firstname2">Fornavn (som i pass):</label>
+                <input type="text" id="firstname2" name="firstname2" required>
+
+                <label for="lastname2">Etternavn (som i pass):</label>
+                <input type="text" id="lastname2" name="lastname2" required>
+
+                <!-- Birth Date Fields -->
+                <fieldset class="date-input">
+                    <legend>Fødselsdato:</legend>
+                    <input type="text" placeholder="DD" maxlength="2">
+                    <input type="text" placeholder="MM" maxlength="2">
+                    <input type="text" placeholder="ÅÅÅÅ" maxlength="4">
+                </fieldset>
+
+                <!-- Gender Selection -->
+                <fieldset class="gender-input">
+                    <legend>Kjønn:</legend>
+                    <label>
+                        <input type="radio" name="gender2" value="kvinne">
+                        KVINNE
+                    </label>
+                    <label>
+                        <input type="radio" name="gender2" value="mann">
+                        MANN
+                    </label>
+                </fieldset>
+            </fieldset>
+
+            <button type="submit">Siste trinn →</button>
+        </form>
+
+        <!-- Trip Summary Sidebar -->
+        <aside class="trip-summary">
+            <img src="bilder/landscape-2016308_640.jpg" alt="Parga Beach Hotel">
+            <h3>Parga Beach</h3>
+            <!-- Rating Stars -->
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <!-- Trip Details -->
+            <ul>
+                <li>Hellas, Parga</li>
+                <li>5. mai 2025 - 12. mai 2025</li>
+                <li>2 Voksne</li>
+                <li>Deluxe rom, Balkong og ikke-røyk</li>
+                <li>Frokostbuffé</li>
+                <li>Oslo Lufthavn — Preveza</li>
+                <li>22 003;-</li>
+                <li>19 803;-</li>
+            </ul>
+        </aside>
+    </section>
+</main>
     <!-- Footer -->
     <footer id="footer">
         <!-- Country Flags Section -->
