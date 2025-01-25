@@ -48,25 +48,25 @@
             <h2>Oppgi dine bestillingsopplysninger</h2>
             
             <!-- Primary Traveler Information -->
-            <fieldset>
+            <section>
                 <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
                 <!-- Name Fields -->
-                <label for="firstname">Fornavn (som i pass):</label>
+                <label for="firstname">FORNAVN (FØLGE PASS):</label>
                 <input type="text" id="firstname" name="firstname" required>
 
-                <label for="lastname">Etternavn (som i pass):</label>
+                <label for="lastname">ETTERNAVN (FØLGE PASS):</label>
                 <input type="text" id="lastname" name="lastname" required>
 
                 <!-- Birth Date Fields -->
-                <fieldset class="date-input">
+                <section class="date-input">
                     <legend>Fødselsdato:</legend>
                     <input type="text" placeholder="DD" maxlength="2">
                     <input type="text" placeholder="MM" maxlength="2">
                     <input type="text" placeholder="ÅÅÅÅ" maxlength="4">
-                </fieldset>
+                </section>
 
                 <!-- Gender Selection -->
-                <fieldset class="gender-input">
+                <section class="gender-input">
                     <legend>Kjønn:</legend>
                     <label>
                         <input type="radio" name="gender1" value="kvinne">
@@ -76,7 +76,7 @@
                         <input type="radio" name="gender1" value="mann">
                         MANN
                     </label>
-                </fieldset>
+                </section>
 
                 <!-- Contact Information -->
                 <label for="email">E-postadresse:</label>
@@ -100,10 +100,10 @@
                     <option value="finland">Suomi</option>
                     <option value="netherlands">Nederland</option>
                 </select>
-            </fieldset>
+            </section>
 
             <!-- Secondary Traveler Information -->
-            <fieldset>
+            <section>
                 <legend>VOKSEN 18+</legend>
                 <!-- Name Fields -->
                 <label for="firstname2">Fornavn (som i pass):</label>
@@ -113,15 +113,15 @@
                 <input type="text" id="lastname2" name="lastname2" required>
 
                 <!-- Birth Date Fields -->
-                <fieldset class="date-input">
+                <section class="date-input">
                     <legend>Fødselsdato:</legend>
                     <input type="text" placeholder="DD" maxlength="2">
                     <input type="text" placeholder="MM" maxlength="2">
                     <input type="text" placeholder="ÅÅÅÅ" maxlength="4">
-                </fieldset>
+                </section>
 
                 <!-- Gender Selection -->
-                <fieldset class="gender-input">
+                <section class="gender-input">
                     <legend>Kjønn:</legend>
                     <label>
                         <input type="radio" name="gender2" value="kvinne">
@@ -131,8 +131,8 @@
                         <input type="radio" name="gender2" value="mann">
                         MANN
                     </label>
-                </fieldset>
-            </fieldset>
+                </section>
+            </section>
 
             <button type="submit">Siste trinn →</button>
         </form>

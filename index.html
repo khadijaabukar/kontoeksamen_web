@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="ikoner/ikoner/css/all.css">
     <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
     <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
@@ -51,7 +51,7 @@
             <nav class="booking-options">
                 <ul>
                     <li class="active">
-                        <li class="fas fa-hotel"></li>
+                        <i class="fas fa-hotel"></i>
                         <span>Fly+ Hotell</span>
                     </li>
                     <li><i class="fas fa-plane"></i><span>Fly</span></li>
@@ -66,8 +66,8 @@
         </section>
             <form class="customer-service">
                 <h4>Kundeservice</h4>
-            
-                <fieldset>
+            <!-- Ikke bruk Fieldset!!!!!! -->
+                <section> 
                     <label for="reise-type">Reisetype</label>
                     <select id="reise-type">
                         <option>Fly + Hotell</option>
@@ -75,31 +75,31 @@
                         <option>Storby</option>
                         <option>Ski</option>
                     </select>
-                </fieldset>
-                <fieldset>
+                </section>
+                <section>
                     <label for="fra">Fra</label>
                     <input type="text" id="fra" placeholder="Oslo Lufthavn">
-                </fieldset>
-                <fieldset>
+                </section>
+                <section>
                     <label for="til">Til</label>
                     <input type="text" id="til" placeholder="Albania">
-                </fieldset>
-                <fieldset>
+                </section>
+                <section>
                     <label for="Reiselengde"></label>
                     <select id="Reiselengde">
                         <option>Mindre enn</option>
                         <option>1-2 uker</option>
                         <option>2+ uker</option>
                     </select>
-                </fieldset>
-                <fieldset>
+                </section>
+                <section>
                     <label for="Velg-dato">Velg dato</label>
                     <input type="date" id="vel-dato" placeholder="mm/ dd/ yyy">
-                </fieldset>
-                <fieldset>
+                </section>
+                <section>
                     <label for="antall-reisende">Antall reisende</label>
                     <input type="number" id="antall-reisende" value="2" min="1">
-                </fieldset>
+                </section>
                 <button type="submit" class= "search-button">Søk</button>
             </form>
         </section>
@@ -111,7 +111,7 @@
                 <h1>Bestill sommerens beste uke</h1>
                 <p>Fly + hotell, 7 dager</p>
                 <p>Fra 3 298,-</p>
-                <a href="#" class="cta-button">Bestill i dag</a>
+                <a href="hotell.html" class="cta-button">Bestill i dag</a>
             </article>
         </section>
     
@@ -119,15 +119,15 @@
         <section class="quick-links">
             <article>
                 <h3>Få eksklusive tilbud</h3>
-                <a href="#">Logg inn/opprett konto og få rabattkoder</a>
+                <a href="#">Logg inn/opprett konto og få rabattkoder »</a>
             </article>
             <article>
                 <h3>Billige restplasser</h3>
-                <a href="#">Opptil 50% rabatt</a>
+                <a href="#">Opptil 50% rabatt »</a>
             </article>
             <article>
                 <h3>Mars - spar opptil 5000,-</h3>
-                <a href="#">Sikre deg et feriekupp</a>
+                <a href="#">Sikre deg et feriekupp »</a>
             </article>
         </section>
     
