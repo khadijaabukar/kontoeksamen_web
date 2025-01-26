@@ -32,11 +32,15 @@ button:hover{
 /* Images */
 img{
     max-width: 100%;
+    margin: auto;
+}
+
+/* Utility Classes */
+.countaier{
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-
 
 /* Header styling */
 header {
@@ -74,66 +78,231 @@ nav ul li a:hover{
     text-decoration: underline;
 
 }
+/* index page styling */
 
 /* Banner Section */
 .banner-section{
     background-image: url('bilder/banner.jpg');
-    
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
 
 }
+.banner-section h1{
+    font-size:24px;
+    margin-bottom: 10px;
+}
+.banner-section p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/* Campaign Section */
+.campaign{
+    background-color: #ffcf40;
+    padding: 20px;
+    text-align: center;
+}
+.campaign h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
-/* Main content area styling */
-main {
+.campaign .cta-button{
+    background-color: #1ca2c1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Tips & Inspiration Section */
+.tips-inspiration{
     padding: 20px;
 }
 
-/* Booking progress bar styling */
-#booking-progress {
+.tips-inspiration h2{
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
-.progress-bar {
+.article-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.destination-card{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidde;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.destination-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-card h3{
+    font-size: 14px;
+    margin: 10px;
+}
+.destination-card .article-link{
+    display: block;
+    margin: 10px;
+    color: #1ca2c1;
+}
+
+/* Hotel page styling*/
+
+/* Image Gallery */
+.image-gallery{
+    padding: 20px;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.gallery-grid img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Hotel Overview */
+.hotel-overview{
+    padding: 20px;
+    text-align: center;
+}
+.hotel-overview h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.hotel-overview .rating{
+    color: #ffcf40;
+    margin-bottom: 10px;
+}
+.hotel-overview .score{
+    font-size: 16px;
+}
+/* Facilities Section */
+.facilities{
+    padding: 20px;
+}
+.facilities h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.facilities ul{
+    list-style-type: none;
+    padding: 0;
+}
+.facilities ul li{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.facilities ul li i{
+    margin-right: 10px;
+    color: #1ca2c1;
+}
+/* Available Rooms Section */
+.availlable-rooms{
+    padding: 20px;
+}
+.availlable-rooms h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.room-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.room-cards{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.room-cards img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.room-cards h3{
+    font-size: 18px;
+    margin: 10px;
+}
+.room-cards ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+.room-cards ul li{
+    margin-bottom: 5px;
+}
+.room-cards .price-details{
+    padding: 10px;
+    background-color: #f6f5f2;
+}
+.room-cards .price-details span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Order page styling */
+/* Booking Progress */
+.booking-progress{
+    padding: 20px;
+    text-align: center;
+}
+.booking-progress h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.booking-progress nav ul{
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #e8e8e8;
+}
+.booking-progress nav ul li{
+    flex: 1;
+    text-align: center;
     padding: 10px;
-    border-radius: 5px;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    margin: 0 5px;
 }
-
-.progress-bar span {
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.progress-bar span.active {
+.booking-progress nav ul li.active{
     background-color: #52d3f0;
     color: white;
 }
-
-/* Form fieldset styling */
-fieldset {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+/* Booking Form */
+.booking-countainer{
     padding: 20px;
-    border-radius: 5px;
 }
-
-legend {
-    font-weight: bold;
+.booking-countainer form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Label styling */
-label {
+.booking-countainer form h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.booking-countainer form label{
     display: block;
     margin-top: 10px;
 }
-
-/* Input and select field styling */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select {
+.booking-container form input,
+.booking-container form select{
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -141,153 +310,72 @@ select {
     border-radius: 4px;
 }
 
-/* Button styling */
-button {
-    background-color: #52d3f0;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* Trip Summary */
+.trip-summary{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
-
-button:hover {
-    background-color: #1ca2c1;
+.trip-summary img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px; 
 }
-
-/* Footer styling */
-footer {
-    background-color: #252525;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.trip-summary h3{
+    font-size: 18px;
+    margin: 10px 0;
 }
-
-.footer-sections {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.footer-sections section {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.footer-sections h3 {
+.trip-summary .rating{
+    color: #ffcf40;
     margin-bottom: 10px;
 }
-
-.footer-sections ul {
+.trip-summary ul{
     list-style-type: none;
     padding: 0;
 }
-
-.footer-sections ul li {
-    margin: 5px 0;
+.trip-summary ul li{
+    margin-bottom: 5px;
 }
 
-.footer-sections a {
+/* Footer styling */
+footer{
+    background-color: #252525;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-sections{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footer-sections section{
+    margin-bottom: 20px;
+}
+.footer-sections h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-sections ul{
+    list-style-type: none;
+    padding: 0;
+}
+.footer-sections ul li{
+    margin: 5px 0;
+}
+.footer-sections a{
     color: white;
     text-decoration: none;
 }
-
-.footer-sections a:hover {
+.footer-sections a:hover{
     text-decoration: underline;
 }
 
-maks 2 000 lines of code for the css style which covers the requimermnets of the assigmnets text
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Tablet and Desktop Styles */
 
 
 
