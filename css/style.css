@@ -82,7 +82,7 @@ nav ul li a:hover{
 
 /* Banner Section */
 .banner-section{
-    background-image: url('bilder/sea-4768869_1920.jpg');
+    background-image: url('../bilder/sea-4768869_1920.jpg')
     background-size: cover;
     background-position: center;
     padding: 20px;
